@@ -1,0 +1,29 @@
+name: venv
+channels:
+  - defaults
+  - bioconda
+  - conda-forge
+dependencies:
+  - python=3.12
+  - sqlite>=3.49.1
+  - pip
+  - jupyter
+  - ipykernel
+  - ipywidgets
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+  - adjusttext
+  - scikit-learn
+  - pytorch
+  - torchvision
+  - fastqc
+  - multiqc
+  - fastp
+  - trimmomatic
+  - hisat2
+  - subread
+  - htseq
+  - pydeseq2
