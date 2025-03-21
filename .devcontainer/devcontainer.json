@@ -35,6 +35,7 @@
 	},
 	"remoteUser": "root",
 	"workspaceMount": "",
+	"workspaceFolder": "/workspaces/host_workspace",
 	"runArgs": [
 		"--volume=${localWorkspaceFolder}:/workspaces/host_workspace:Z"
 	]

@@ -23,7 +23,12 @@ dependencies:
   - multiqc
   - fastp
   - trimmomatic
+  - samtools
   - hisat2
   - subread
   - htseq
   - pydeseq2
+  - gseapy
+  - sqlalchemy
+  - flask
+  - jinja2
