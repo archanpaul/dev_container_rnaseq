@@ -29,6 +29,7 @@ dependencies:
   - htseq
   - pydeseq2
   - gseapy
+  - mygene
   - sqlalchemy
   - flask
   - jinja2
