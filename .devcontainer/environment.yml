@@ -30,6 +30,7 @@ dependencies:
   - pydeseq2
   - gseapy
   - mygene
+  - goatools
   - sqlalchemy
   - flask
   - jinja2

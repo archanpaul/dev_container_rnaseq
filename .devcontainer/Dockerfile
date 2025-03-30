@@ -7,6 +7,10 @@ SHELL ["/bin/bash","-l", "-c"]
 
 WORKDIR /root/
 
+RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
+    && apt-get -y install --no-install-recommends fuse s3fs git git-lfs \
+    && apt-get -y install --no-install-recommends libgl-dev default-jre
+
 RUN /opt/conda/bin/conda init bash && \
     /opt/conda/bin/conda config --add channels default && \
     /opt/conda/bin/conda config --add channels bioconda && \
@@ -18,7 +22,7 @@ RUN /opt/conda/bin/conda init bash && \
 
 RUN rm -rf /tmp/conda-tmp
 
-RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
+RUN export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends fuse s3fs default-jre git git-lfs
 
 ENV PATH /opt/conda/bin:$PATH
